@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="css/calcula.css" />
+    <script type="text/javascript" src="js/calcula.js"></script>
+</head>
+
+<body>
+    <div class="fijo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dere"><a href=" " target="_BLANK">Lizzeth</a></li>
+                <li class="dere"><a href="https://maferl21.github.io/Unidad3-MisPracticas/" target="_BLANK">Fernanda</a></li>
+                <li class="dere"><a href="https://paola-progw.github.io/PaolaU3/" target="_BLANK">Paola</a></li>
+                <li id="active" ><a href=" ">Calculadora</a>
+            </ul>
+        </nav>
+    </div>
+
+    <br><br>
+    <h2>Calculadora Cientifica</h2>
+    <div class="contenedor">
+        <div class="calculadora">
+            <form action="#" name="calculadora" id="calculadora">
+                <p id="textoPantalla">0</p>
+                <p>
+                    <input type="button" class="largo" value="Sen" onclick="seno()" />
+                    <input type="button" class="largo" value="Cos" onclick="coseno()" />
+                    <input type="button" class="largo" value="Tan" onclick="tangente()" />
+                </p>
+                <p>
+                    <input type="button" class="largo" value="arcsin" onclick="Aseno()" />
+                    <input type="button" class="largo" value="arccos" onclick="Acoseno()" />
+                    <input type="button" class="largo" value="arctan" onclick="Atangente()" />
+                </p>
+                <p>
+                    <input type="button" class="conv" value="Binario" onclick="conver('bin')" />
+                    <input type="button" class="conv" value="Octal" onclick="conver('oc')" />
+                    <input type="button" class="conv-2" value="Hexadecimal" onclick="conver('hex')" />
+                </p>
+                <p>
+                    <input type="button" value="π" onclick="pi()"/>
+                    <input type="button" value="xⁿ" onclick="operar('**')"/>
+                    <input type="button" value="x²" onclick="potencia()"/>
+                    <input type="button" class="largo-2" value="&larr;" onclick="retro()" />
+                    <input type="button" class="largo-2" value="C" onclick="borradoTotal()" />
+                </p>
+                <p>
+                    <input type="button" class="boton" value="7" onclick="numero('7')" />
+                    <input type="button" value="8" onclick="numero('8')" />
+                    <input type="button" value="9" onclick="numero('9')" />
+                    <input type="button" value="/" onclick="operar('/')" />
+                    <input type="button" value="Raiz" onclick="raizc()" />
+                </p>
+                <p>
+                    <input type="button" value="4" onclick="numero('4')" />
+                    <input type="button" value="5" onclick="numero('5')" />
+                    <input type="button" value="6" onclick="numero('6')" />
+                    <input type="button" value="*" onclick="operar('*')" />
+                    <input type="button" value="%" onclick="porcent()" />
+                </p>
+                <p>
+                    <input type="button" value="1" onclick="numero('1')" />
+                    <input type="button" value="2" onclick="numero('2')" />
+                    <input type="button" value="3" onclick="numero('3')" />
+                    <input type="button" value="-" onclick="operar('-')" />
+                    <input type="button" value="1/x" onclick="inve()" />
+                </p>
+                <p>
+                    <input type="button" value="0" onclick="numero('0')" />
+                    <input type="button" value="+/-" onclick="opuest()" />
+                    <input type="button" value="." onclick="numero('.')" />
+                    <input type="button" value="+" onclick="operar('+')" />
+                    <input type="button" value="=" onclick="igualar()" />
+                </p>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
